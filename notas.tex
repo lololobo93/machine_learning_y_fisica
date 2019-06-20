@@ -1,0 +1,50 @@
+\documentclass[12pt,oneside,openany]{memoir}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{url}
+
+% for placeholder text
+\usepackage{lipsum}
+
+\title{Notas. Aplicaciones del Deep Learning a la Física}
+\author{Jesús Ernesto Carro Martínez}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+En estas notas se estudian diferentes aplicaciones del Deep Learning y las redes neuronales a los campos de la física estadística, atómica y molecular. Aquí se abordan algunos trabajos publicados a partir del artículo seminal de Carrasquilla y Melko \cite{Car17}.
+\end{abstract}
+
+\newpage
+
+\chapter{Introducción}
+
+En este capítulo describimos qué es el Machine Learning y Deep Learning, además de presentar los fundamentos para desarrollarse en estos conceptos. Posteriormente, se presenta una pequena introducción al lenguaje de programación a emplear, Python, así como la paquetería usada para realizar redes neuronales, PyTorch. 
+
+\section{¿Qué es el deep learning?}
+
+El deep learning (DL) es un tipo de machine learning (ML), donde esta última área es usada en algunas aproximaciones de artificial intelligence (AI). En la AI se busca producir software inteligente para automatizar trabajos de rutina, entender imágenes o lenguaje, hacer diagnósticos en medicina y ciberseguridad, así como apoyo para investigación científica \cite{Nil09}. Dentro de esto, en lugar de necesitar humanos para manualmente construir modelos e introducir este conocimiento como código, el ML ofrece una alternativa más eficiente, encontrar patrones en los datos y adquirir de esta forma su propio conocimiento. Ejemplos de esta tecnología en nuestro día a día son los filtros de spam en email, software de reconocimiento de voz y texto, buscadores web y videojuegos.
+
+Finalmente, el deep learning propone una forma de resolver el problema central del machine learning, esto es por medio de representaciones que son expresadas en términos de otras representaciones más simples. Un ejemplo de esto son las redes neuronales, las cuales en términos simples son una función matemática, formada por funciones más simples, que mapea alguna entrada a ciertos valores de salida. 
+
+\begin{thebibliography}{9}
+\bibitem{Car17} 
+J. Carrasquilla y R.G. Melko. Machine Learning phases of matter. \textit{Nat. Phys.}, 13:431-434, 1993.
+
+\bibitem{Nil09} 
+N.J. Nilsson. \textit{The Quest for Artificial Intelligence}. Cambridge University Press, 2009.
+ 
+%\bibitem{einstein} 
+%Albert Einstein. 
+%\textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
+%[\textit{On the electrodynamics of moving bodies}]. 
+%Annalen der Physik, 322(10):891–921, 1905.
+% 
+%\bibitem{knuthwebsite} 
+%Knuth: Computers and Typesetting,
+%\\\texttt{http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html}
+\end{thebibliography}
+
+\end{document}
