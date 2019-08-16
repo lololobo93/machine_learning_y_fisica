@@ -23,7 +23,7 @@ En estas notas se estudian diferentes aplicaciones del Deep Learning y las redes
 
 En este capítulo describimos qué es el Machine Learning y Deep Learning, además de presentar los fundamentos para desarrollarse en estos conceptos. Posteriormente, se presenta una pequena introducción al lenguaje de programación a emplear, Python, así como la paquetería usada para realizar redes neuronales, PyTorch. 
 
-\section{¿Qué es el deep learning?}
+\section{¿Qué es el Deep Learning?}
 
 El deep learning (DL) es un tipo de machine learning (ML), el cual forma parte del campo de la artificial intelligence (AI). En la AI se busca producir software inteligente para automatizar trabajos de rutina, entender imágenes o lenguaje, hacer diagnósticos en medicina y ciberseguridad, así como apoyo para investigación científica \cite{Nil09}. Dentro de esto, en lugar de necesitar humanos para manualmente construir modelos e introducir este conocimiento como código, el ML ofrece una alternativa más eficiente, encontrar patrones en los datos y adquirir de esta forma su propio conocimiento. Ejemplos de esta tecnología en nuestro día a día son los filtros de spam en email, software de reconocimiento de voz y texto, buscadores web y videojuegos.
 
@@ -33,9 +33,28 @@ Actualmente, las áreas donde el deep learning ha resultado de utilidad son bast
 
 La física cuántica de muchos cuerpos estudia los fenómenos producidos por sistemas de muchas partículas interactuantes cuyo comportamiento es de origen cuántico. Para describir completamente las propiedades de estos sistemas es necesario conocer su función de onda de muchos cuerpos. Sin embargo, esta función de onda presenta un gran reto, pues su complejidad crece exponencialmente con el número de partículas en el sistema. Métodos tradicionales para resolver este problema han resultado ser inefectivos, incluso para un número pequeño de partículas y ha sido aquí donde el machine learning y deep learning han demostrado tener utilidad. En un artículo publicado por Giuseppe Carleo y Mathias Troyer \cite{Carleo17}  demostaron que una red neuronal puede aprender la función de onda de un sistema cuántico de muchos cuerpos, como por ejemplo la de una red de espines en una o dos dimensiones.
 
+Además del trabajo de Carleo y Troyer, en los últimos años se han presentado diferentes trabajos y publicaciones relacionadas con la solución de problemas cuánticos de muchos cuerpos por medio de redes neuronales.  Sin embargo, muchos de estos trabajos se han realizado con redes neuronales simples comparadas con las observadas en aplicaciones comerciales, como las desarrolladas por Google y Facebook, las cuales presentan estructuras más profundas que han sido altamente optimizadas.
+
+Aunque no resulta sencillo transladar una red neuronal más compleja a aplicaciones en sistemas cuánticos, pues requiere reescribir los algoritmos desde cero, se espera que con el paso del tiempo las redes neuronales más profundas puedan ser empleadas para resolver problemas más complejos en cuántica. En base a esto, en estas notas se presenta una introducción a las redes neuronales además de estudiar algunas aplicaciones en física.
+
+Para finalizar esta presentación de los conceptos de machine learning y deep learning, conviene mencionar la base matemática y computacional que son esenciales para entender las secciones siguientes, donde empezaremos a estudiar los algoritmos. A continuación enlistamos los prerequisitos.
+
+\begin{itemize}
+\item Álgebra lineal. El estudio del álgebra lineal envuelve varios tipos de objetos matemáticos: escalares, vectores, matrices y tensores, así como sus respectivas operaciones.
+
+\item Probabilidad y teoría de la información. La teoría de probabilidad nos permite razonar en presencia de incertidumbre, mientras la teoría de información permite cuantificar la cantidad de incertidumbre en una distribución de probabilidad. En general, estos conceptos nos permiten analizar el comportamiento de sistemas de AI.
+
+\item Computación numérica. El machine learning requiere el uso de algortimos computacionales que permitan estimar soluciones a un problema sin necesariamente resolverlo de forma completa. Muchos de estos algoritmos requieren de procedimientos como optimización y resolver sistemas de ecuaciones, los cuales se ejemplificarán en las siguientes secciones. 
+\end{itemize}
+
+Estos temas son estudiados en diferentes programas de física y matemáticas por lo cual no se abordará más de ellos en estas notas; sin embargo, si algún estudiante desea repasar algunas partes de estos principios recomendamos revisar la referencia \cite{Goo16}, donde se describen los conceptos necesarios para adentrarse en el área del Deep Learning y Machine Learning.
+
+\section{Conceptos en Machine Learning}
+
 
 
 \begin{thebibliography}{9}
+
 \bibitem{Car17} 
 J. Carrasquilla y R.G. Melko. Machine Learning phases of matter. \textit{Nat. Phys.}, 13:431-434, 2017.
 
@@ -44,6 +63,9 @@ N.J. Nilsson. \textit{The Quest for Artificial Intelligence}. Cambridge Universi
 
 \bibitem{Carleo17} 
 G. Carleo y M. Troyer. Solving the quantum many/body problem with artificial neural networks. \textit{Science}, 355:602-606, 2017.
+
+\bibitem{Goo16} 
+I. Goodfellow, Y. Bangio y A. Courville. Deep Learning. \textit{MIT Press}, 2016.
  
 %\bibitem{einstein} 
 %Albert Einstein. 
